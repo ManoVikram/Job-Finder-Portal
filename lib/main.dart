@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
+
+import './onboardingScreen/onboarding_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -28,8 +29,8 @@ class JobFinder extends StatefulWidget {
 class JobFinderState extends State<JobFinder> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(),
+    return const Scaffold(
+      body: OnboardingScreen(),
     );
   }
 }
