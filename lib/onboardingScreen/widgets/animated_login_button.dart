@@ -18,8 +18,8 @@ class AnimatedLoginButton extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         SizedBox(
-          height: 80.0,
-          width: 80.0,
+          height: 90.0,
+          width: 90.0,
           child: CircularProgressIndicator(
             color: primaryColor,
             strokeWidth: 1.5,
@@ -27,8 +27,8 @@ class AnimatedLoginButton extends StatelessWidget {
           ),
         ),
         Container(
-          height: 40.0,
-          width: 40.0,
+          height: 60.0,
+          width: 60.0,
           padding: const EdgeInsets.all(5.0),
           decoration: const BoxDecoration(
             color: Colors.white,
