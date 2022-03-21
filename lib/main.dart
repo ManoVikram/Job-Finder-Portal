@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import './onboardingScreen/onboarding_screen.dart';
+import './homeScreen/home_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -30,7 +31,7 @@ class JobFinderState extends State<JobFinder> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: OnboardingScreen(),
+      body: HomeScreen(),
     );
   }
 }
