@@ -31,7 +31,7 @@ class JobFinderState extends State<JobFinder> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: HomeScreen(),
+      body: OnboardingScreen(),
     );
   }
 }

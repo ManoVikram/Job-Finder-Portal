@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../constants.dart';
 
+import '../homeScreen/home_screen.dart';
 import './widgets/animated_login_button.dart';
 import './widgets/display_pictures.dart';
 import './widgets/intro_title_and_subtitle.dart';
@@ -119,8 +120,15 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                               offset: Offset(0,
                                   100 * (1 - _loaderTranslateAnimation.value)),
                               child: GestureDetector(
-                                onTap: () {
-                                  _loadingAnimationController.forward();
+                                onTap: () async {
+                                  await _loadingAnimationController.forward();
+
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const HomeScreen(),
+                                    ),
+                                  );
                                 },
                                 child: AnimatedLoginButton(
                                     loadingAnimation: _loadingAnimation),
