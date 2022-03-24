@@ -1,7 +1,6 @@
-
 # Job Finder App
 
-An app concept built with Flutter that will help you find jobs!
+An animated app concept built with Flutter that will help you find jobs!
 
 UI Credits - 
 ### UI Credits
