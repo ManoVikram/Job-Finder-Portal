@@ -93,10 +93,11 @@ class DisplayPictures extends StatelessWidget {
                 (-60 * (1 - _dpAnimation.value)),
             (20.0 * _dpAnimation.value) + (-60 * (1 - _dpAnimation.value)),
           ),
-          child: const CircleAvatar(
+          child: CircleAvatar(
             backgroundImage:
-                AssetImage("lib/onboardingScreen/assets/DP_01.jpg"),
+                const AssetImage("lib/onboardingScreen/assets/DP_01.jpg"),
             radius: 36.0,
+            backgroundColor: Colors.grey[350],
           ),
         ),
         Transform.translate(

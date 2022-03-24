@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../constants.dart';
+
+import '../../jobDescriptionScreen/job_description_screen.dart';
 import '../models/job.dart';
 
 class NearByJobSection extends StatelessWidget {
+  final Size size;
+
   const NearByJobSection({
     Key? key,
+    required this.size,
   }) : super(key: key);
 
   @override
@@ -36,8 +41,7 @@ class NearByJobSection extends StatelessWidget {
           itemBuilder: (context, index) {
             return Container(
               height: 86,
-              margin: const EdgeInsets.only(
-                  bottom: defaultPadding),
+              margin: const EdgeInsets.only(bottom: defaultPadding),
               padding: const EdgeInsets.symmetric(
                 vertical: defaultPadding,
                 horizontal: defaultPadding + 4,
@@ -60,13 +64,10 @@ class NearByJobSection extends StatelessWidget {
                   ),
                 ],
               ),
-              child: LayoutBuilder(
-                  builder: (context, constraints) {
+              child: LayoutBuilder(builder: (context, constraints) {
                 return Row(
-                  mainAxisAlignment:
-                      MainAxisAlignment.start,
-                  crossAxisAlignment:
-                      CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
                       height: constraints.maxHeight,
@@ -74,8 +75,7 @@ class NearByJobSection extends StatelessWidget {
                       padding: const EdgeInsets.all(12.0),
                       decoration: BoxDecoration(
                         color: Colors.grey[200],
-                        borderRadius:
-                            BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Image.asset(
                         jobs[index].companyImage,
@@ -84,10 +84,8 @@ class NearByJobSection extends StatelessWidget {
                     ),
                     const SizedBox(width: defaultPadding),
                     Column(
-                      mainAxisAlignment:
-                          MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment:
-                          CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           jobs[index].jobTitle,
@@ -105,18 +103,36 @@ class NearByJobSection extends StatelessWidget {
                       ],
                     ),
                     const Spacer(),
-                    Container(
-                      height: constraints.maxHeight * 0.7,
-                      width: constraints.maxHeight * 0.7,
-                      padding: const EdgeInsets.all(6.0),
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius:
-                            BorderRadius.circular(10.0),
-                      ),
-                      child: SvgPicture.asset(
-                        "lib/homeScreen/assets/icons/arrowRight.svg",
-                        color: Colors.white,
+                    GestureDetector(
+                      onTap: () {
+                        showBottomSheet(
+                          context: context,
+                          builder: (context) {
+                            return JobDescriptionScreen(
+                              size: size,
+                              job: jobs[index],
+                            );
+                          },
+                          // barrierColor: Colors.transparent,
+                          backgroundColor: Colors.transparent,
+                          // isDismissible: true,
+                          enableDrag: true,
+                          // constraints:
+                          //     BoxConstraints(minHeight: size.height * 0.85),
+                        );
+                      },
+                      child: Container(
+                        height: constraints.maxHeight * 0.7,
+                        width: constraints.maxHeight * 0.7,
+                        padding: const EdgeInsets.all(6.0),
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: SvgPicture.asset(
+                          "lib/homeScreen/assets/icons/arrowRight.svg",
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ],

@@ -23,8 +23,10 @@ List<Job> jobs = [
     companyName: "Spotify",
     companyImage: "lib/homeScreen/assets/images/SpotifyLogo.png",
     jobTitle: "Product Designer",
-    quaification: "",
-    aboutTheJob: "",
+    quaification:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    aboutTheJob:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sem mi, gravida vel magna at, convallis gravida diam. Quisque mi tortor, sodales id pulvinar vulputate, egestas in magna. Sed suscipit, lectus vitae consectetur egestas, nisl ligula eleifend est, id scelerisque velit risus ut nisi. Mauris tempus eleifend luctus. Mauris non.",
     city: "Business Bay",
     country: "Dubai",
   ),
@@ -32,8 +34,10 @@ List<Job> jobs = [
     companyName: "Phone Pe",
     companyImage: "lib/homeScreen/assets/images/PhonePeLogo.png",
     jobTitle: "Graphic Designer",
-    quaification: "",
-    aboutTheJob: "",
+    quaification:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    aboutTheJob:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sem mi, gravida vel magna at, convallis gravida diam. Quisque mi tortor, sodales id pulvinar vulputate, egestas in magna. Sed suscipit, lectus vitae consectetur egestas, nisl ligula eleifend est, id scelerisque velit risus ut nisi. Mauris tempus eleifend luctus. Mauris non.",
     city: "London",
     country: "England",
   ),
@@ -41,8 +45,10 @@ List<Job> jobs = [
     companyName: "Google",
     companyImage: "lib/homeScreen/assets/images/GoogleLogo.png",
     jobTitle: "UX Designer",
-    quaification: "",
-    aboutTheJob: "",
+    quaification:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    aboutTheJob:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sem mi, gravida vel magna at, convallis gravida diam. Quisque mi tortor, sodales id pulvinar vulputate, egestas in magna. Sed suscipit, lectus vitae consectetur egestas, nisl ligula eleifend est, id scelerisque velit risus ut nisi. Mauris tempus eleifend luctus. Mauris non.",
     city: "London",
     country: "England",
   ),
@@ -50,8 +56,10 @@ List<Job> jobs = [
     companyName: "Apple",
     companyImage: "lib/homeScreen/assets/images/AppleLogo.png",
     jobTitle: "iOS Developer",
-    quaification: "",
-    aboutTheJob: "",
+    quaification:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    aboutTheJob:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sem mi, gravida vel magna at, convallis gravida diam. Quisque mi tortor, sodales id pulvinar vulputate, egestas in magna. Sed suscipit, lectus vitae consectetur egestas, nisl ligula eleifend est, id scelerisque velit risus ut nisi. Mauris tempus eleifend luctus. Mauris non.",
     city: "Palo Alto",
     country: "USA",
   ),
@@ -59,8 +67,10 @@ List<Job> jobs = [
     companyName: "Microsoft",
     companyImage: "lib/homeScreen/assets/images/MicrosoftLogo.png",
     jobTitle: "ML Engineer",
-    quaification: "",
-    aboutTheJob: "",
+    quaification:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    aboutTheJob:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sem mi, gravida vel magna at, convallis gravida diam. Quisque mi tortor, sodales id pulvinar vulputate, egestas in magna. Sed suscipit, lectus vitae consectetur egestas, nisl ligula eleifend est, id scelerisque velit risus ut nisi. Mauris tempus eleifend luctus. Mauris non.",
     city: "Silicon Valley",
     country: "USA",
   ),

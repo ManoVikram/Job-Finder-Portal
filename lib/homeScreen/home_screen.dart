@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen>
                       Transform.translate(
                         offset: Offset(
                             0, _size.height * (1 - _nearByJobAnimation.value)),
-                        child: const NearByJobSection(),
+                        child: NearByJobSection(size: _size),
                       ),
                     ],
                   );
